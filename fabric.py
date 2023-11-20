@@ -14,22 +14,29 @@ class Factory(ABC):
 class SvarkaRobot():
     def create(self):
         print("Svarka robot created!")
+    def do_ur_job(self):
+        print("(started Svarka)")
 
 
 class SborkaRobot():
     def create(self):
         print("Sborka robot created!")
+    def do_ur_job(self):
+        print("(started Sborka)")
 
 
 class SvarkaDecorator():
     def create(self):
         print("Svarka decorator created!")
+    def do_ur_job(self):
+        print("(started decorate Svarka)")
 
 
 class SborkaDecorator():
     def create(self):
         print("Sborka decorator created!")
-
+    def do_ur_job(self):
+        print("(started decorate Sborka)")
 
 class SvarkaFactory(Factory):
     def createrrobotARM(self):
@@ -52,7 +59,12 @@ def main(factory):
     decorator = factory.createdecorator()
 
     robot.create()
+    robot.do_ur_job()
+    print()
+
     decorator.create()
+    decorator.do_ur_job()
+    print()
 
 
 factory1 = SvarkaFactory()
