@@ -70,5 +70,7 @@ def main(factory):
 factory1 = SvarkaFactory()
 factory2 = SborkaFactory()
 
+
+
 main(factory1)
 main(factory2)
