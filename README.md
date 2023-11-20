@@ -1,2 +1,2 @@
 # AbstracFabric
- 
+ Задание по ООП
